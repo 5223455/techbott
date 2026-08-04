@@ -1154,8 +1154,15 @@
             const typingEl = showTyping();
             setTimeout(() => {
                 typingEl.remove();
-                const reply = getResponse(msg);
-                addMessage(reply, 'bot');
+                if (chatWizardActive) {
+                    const keys = ["industry", "application", "material", "speed", "size"];
+                    chatWizardAnswers[keys[chatWizardStep]] = msg;
+                    chatWizardStep++;
+                    processChatWizardStep();
+                } else {
+                    const reply = getResponse(msg);
+                    addMessage(reply, 'bot');
+                }
             }, 600 + Math.random() * 400);
         });
 
@@ -1165,7 +1172,7 @@
                 const q = e.target.getAttribute('data-q');
                 if (q) {
                     // If it's the AI recommendation, open overlay directly
-                    if (q === '✨ AI Product Recommendation') {
+                    if (q === '✨ AI Product Recommendation' || q === 'Product Recommendations') {
                         addMessage(q, 'user');
                         const typingEl = showTyping();
                         setTimeout(() => {
@@ -1174,13 +1181,14 @@
                             openOverlay();
                         }, 400);
                     } else {
-                        addMessage(q, 'user');
-                        const typingEl = showTyping();
-                        setTimeout(() => {
-                            typingEl.remove();
-                            addMessage(getResponse(q), 'bot');
-                        }, 500);
+                        input.value = q;
+                        form.dispatchEvent(new Event('submit', { cancelable: true }));
                     }
+                }
+                const wizardAns = e.target.getAttribute('data-wizard');
+                if (wizardAns && chatWizardActive) {
+                    input.value = wizardAns;
+                    form.dispatchEvent(new Event('submit', { cancelable: true }));
                 }
             }
         });
