@@ -4869,3 +4869,10 @@ table.spec-table > tbody > tr:not(.category-row):nth-child(even) > td:first-chil
     background-color: var(--secondary) !important;
     color: #ffffff !important;
 }
+
+/* Darken About Section Text */
+.about-content p,
+.about-content ul li,
+.about-content h4 {
+    color: #000 !important;
+}
