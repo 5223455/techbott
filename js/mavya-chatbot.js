@@ -361,7 +361,7 @@
         if (!q) return "Please type a question.";
 
         // If someone asks for a recommendation, suggestion, or "which printer", open the overlay
-        const recRegex = /recommend|suggest|which printer|best printer|what printer|which application|which machine|printer for my product/i;
+        const recRegex = /recommend|suggest|which printer|best printer|what printer|which application|which machine|printer for my product|which is best|best for|what to use for|what should i use|suitable for|which one is best|which one should i/i;
         if (q === "✨ ai product recommendation" || recRegex.test(q)) {
             setTimeout(() => openOverlay(), 100);
             return "I'd be happy to help you find the right solution! Opening the **AI Product Recommendation Assistant**... 🤖";
