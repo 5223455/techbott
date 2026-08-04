@@ -286,7 +286,7 @@
         },
         {
             keywords: ["service support", "technical support", "contact technical support", "maintenance"],
-            handler: () => `**Service & Technical Support**\n\nTechBott India provides 24/7 supply and service availability.\n📱 Call Support: ${KB.contact.phone[0]}\n📧 Email: ${KB.contact.email.general}\n\n[Contact Support →](${basePath}pages/general/contact.html)`
+            handler: () => `**Service & Technical Support**\n\nTechBott India provides 24/7 supply and service availability.\n📱 Call Support: +91 9502677315\n📧 Email: ${KB.contact.email.general}\n\n[Contact Support →](${basePath}pages/general/contact.html)`
         },
         {
             keywords: ["product brochure", "brochure", "catalog", "catalogue", "brochures"],
