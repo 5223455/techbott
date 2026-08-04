@@ -875,13 +875,13 @@
                     
                     <div class="mavya-product-card-actions" style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 8px;">
                         <a href="${quotationLink}" class="mavya-next-step-btn" style="flex: 1; padding: 8px; font-size: 13px;">
-                            <span class="mavya-next-step-icon">📝</span> Quote
+                            Quote
                         </a>
                         ${p.pdf ? `<button onclick="window.mavyaDownloadBrochure('${p.name.replace(/'/g, "\\'")}', '${p.pdf}')" class="mavya-next-step-btn" style="flex: 1; padding: 8px; font-size: 13px; border: 1px solid var(--mavya-border); background: #f8fafc; cursor: pointer;">
-                            <span class="mavya-next-step-icon">📄</span> Brochure
+                            Brochure
                         </button>` : ''}
                         ${p.page ? `<a href="${basePath}${p.page}" class="mavya-next-step-btn" style="flex: 1; padding: 8px; font-size: 13px;">
-                            <span class="mavya-next-step-icon">🔍</span> Specs/Videos
+                            Specs/Videos
                         </a>` : ''}
                     </div>
                 </div>`;
@@ -890,7 +890,6 @@
         body.innerHTML = `
             <div class="mavya-results-container">
                 <div class="mavya-results-header">
-                    <div class="mavya-results-icon">✅</div>
                     <h2>Your Recommended Solutions</h2>
                     <p>Based on your requirements, here are the best-fit industrial printers.</p>
                 </div>
