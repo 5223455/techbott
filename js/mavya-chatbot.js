@@ -339,7 +339,7 @@
         },
         {
             keywords: ["hello", "hi", "hey", "good morning", "good afternoon", "good evening", "namaste", "howdy"],
-            handler: () => "Hello! I'm **Mavya**, your TechBott India assistant. 👋\n\nI can help you with:\n• Our **products**\n• **Contact** information\n• **Industries** we serve\n• **Product Recommendations**\n\nWhat would you like to know?"
+            handler: () => `Hello! I'm **Mavya**, your TechBott India assistant. 👋\n\nI can help you with:\n<div class="mavya-options"><button class="mavya-option-btn" data-q="Our Products">🖨️ Our Products</button><button class="mavya-option-btn" data-q="Contact Us">📞 Contact Information</button><button class="mavya-option-btn" data-q="Industries">🏭 Industries We Serve</button><button class="mavya-option-btn" data-q="Product Recommendations">✨ Product Recommendations</button></div>`
         }
     ];
 
