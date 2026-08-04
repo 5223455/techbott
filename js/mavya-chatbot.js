@@ -7,6 +7,9 @@
 
     // Determine base path by finding this script's src
     let basePath = "";
+    let chatWizardActive = false;
+    let chatWizardStep = 0;
+    let chatWizardAnswers = {};
     const scripts = document.getElementsByTagName('script');
     for (let i = 0; i < scripts.length; i++) {
         const src = scripts[i].getAttribute('src');
@@ -1032,9 +1035,6 @@
         const iconClose = toggleBtn.querySelector('.mavya-icon-close');
 
         let isOpen = false;
-        let chatWizardActive = false;
-        let chatWizardStep = 0;
-        let chatWizardAnswers = {};
 
         function toggleChat() {
             isOpen = !isOpen;
