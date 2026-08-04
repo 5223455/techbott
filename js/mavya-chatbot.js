@@ -250,7 +250,7 @@
         },
         {
             keywords: ["jet 2", "jet2", "neo", "jet-2neo", "jet 2 neo", "jet 2neo"],
-            handler: () => formatProduct(KB.products["jet 2 neo"])
+            handler: () => formatProduct(KB.products["leibinger jet2neo"])
         },
         {
             keywords: ["jet 3", "jet3", "eco", "jet-3eco", "jet 3 eco", "jet 3eco"],
