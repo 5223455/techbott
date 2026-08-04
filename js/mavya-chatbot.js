@@ -863,7 +863,7 @@
             const allSkipped = Object.values(overlayAnswers).every(val => val === 'Not specified');
             const badgeText = (!allSkipped) ? (badges[idx] || 'Option') : (p.brand === 'TechBott' ? 'Highly Recommended' : 'Option');
             
-            const quotationLink = `mailto:marketing@techbott.com?subject=${encodeURIComponent('Quotation Request: ' + p.name)}`;
+            const quotationLink = `${basePath}pages/general/contact.html?product=${encodeURIComponent(p.name)}`;
             
             cardsHtml += `
                 <div class="mavya-product-card">
