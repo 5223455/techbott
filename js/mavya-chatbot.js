@@ -350,7 +350,7 @@
         if (!q) return "Please type a question.";
 
         // If someone types "recommend" in the chat, open the overlay instead
-        if (q === "product recommendation assistant" || q === "recommend me a printer" || q === "recommend" || q === "ai product recommendation" || q === "✨ ai product recommendation") {
+        if (q === "product recommendation assistant" || q === "product recommendations" || q === "product recommendation" || q === "recommend me a printer" || q === "recommend" || q === "ai product recommendation" || q === "✨ ai product recommendation") {
             setTimeout(() => openOverlay(), 100);
             return "Opening the **AI Product Recommendation Assistant** for you! 🤖";
         }
@@ -367,7 +367,7 @@
         }
         for (const key of Object.keys(KB.products)) {
             const words = key.split(" ");
-            if (words.some(w => w.length > 2 && q.includes(w))) {
+            if (words.some(w => w.length > 2 && new RegExp(`\\b${w}\\b`).test(q))) {
                 return formatProduct(KB.products[key]);
             }
         }
