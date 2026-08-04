@@ -139,19 +139,23 @@
                 page: "pages/products/Hx-Cartro.html",
                 pdf: "brochures/Hx_Cartro_Catalogue_IN.pdf"
             },
-            "jet 2 neo": {
-                name: "Jet 2neo",
+            "leibinger jet2neo": {
+                name: "Leibinger JET2neo",
                 brand: "Leibinger",
-                features: "Advanced CIJ printer. Prints up to 3 lines at speeds of 268 m/min with patented Sealtronic nozzle sealing (zero downtime, zero clogging, made in Germany).",
-                page: "pages/products/Jet-2neo.html",
-                pdf: "brochures/JET2-NEO_Flyer_.pdf.pdf"
+                models: "JET2neo",
+                features: "Sealtronic print head technology, 7-inch touch screen display. Automated Sealtronic system prevents ink drying. Windows-based interface.",
+                applications: "Carton, Plastics, Metal, Glass, Wire, Wood.",
+                page: "pages/technology/Leibinger.html",
+                pdf: "brochures/JET2-NEO_Flyer_.pdf"
             },
-            "jet 3 eco": {
-                name: "Jet 3Eco",
+            "leibinger jet3up": {
+                name: "Leibinger JET3up",
                 brand: "Leibinger",
-                features: "High-performance CIJ printer for demanding production environments. Enhanced speed, expanded character sets with Sealtronic technology.",
-                page: "pages/products/jet-3eco.html",
-                pdf: "brochures/JET3_ECO_Flyer_.pdf.pdf"
+                models: "JET3up",
+                features: "Over 800 software functions, prints up to 5 lines. Print speeds up to 10 m/s. IP54/IP65 ratings, Sealtronic technology, multi-language UI.",
+                applications: "Carton, Plastics, Metal, Glass, Cables, Electronics.",
+                page: "pages/technology/Leibinger.html",
+                pdf: "brochures/JET3_ECO_Flyer_.pdf"
             },
             "accessories": {
                 name: "Accessories & Spare Parts",
@@ -810,18 +814,7 @@
             window.mavyaDownloadBrochure = function(productName, pdfPath) {
                 const email = prompt(`Please enter your email ID to download the brochure for ${productName}:`);
                 if (email && email.trim() !== '') {
-                    // 1. Trigger download directly
-                    if (pdfPath && pdfPath !== 'undefined' && pdfPath !== '') {
-                        const link = document.createElement('a');
-                        link.href = basePath + pdfPath;
-                        link.download = pdfPath.split('/').pop();
-                        link.target = '_blank';
-                        document.body.appendChild(link);
-                        link.click();
-                        document.body.removeChild(link);
-                    }
-                    
-                    // 2. Send notification to marketing silently via backend API
+                    // 1. Send notification to marketing silently via backend API
                     const API_BASE = window.TECHBOTT_API_URL || 'http://localhost:3000';
                     const enquiryData = {
                         firstName: 'Brochure',
@@ -846,8 +839,20 @@
                     .then(data => console.log('[TechBott] Backend notified of brochure download'))
                     .catch(err => console.error('[TechBott] Failed to notify backend:', err));
                     
-                    // Alert user it's downloading
-                    alert(`Thank you! The brochure for ${productName} is downloading.`);
+                    // 2. Trigger download directly
+                    if (pdfPath && pdfPath !== 'undefined' && pdfPath !== '') {
+                        const link = document.createElement('a');
+                        link.href = basePath + pdfPath;
+                        link.download = pdfPath.split('/').pop();
+                        link.target = '_blank';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                        
+                        alert(`Thank you! The brochure for ${productName} is downloading.`);
+                    } else {
+                        alert(`Thank you! The brochure for ${productName} will be sent to your email by our marketing team shortly.`);
+                    }
                 }
             };
         }
