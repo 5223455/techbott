@@ -299,8 +299,31 @@
             handler: () => `**⚡ Laser Systems at TechBott India:**\n\n**1. CO2 Lasers** – Opti-Co2 (30W)\n**2. Fiber Lasers** – OptiFy (20W/30W/50W/100W)\n**3. UV Lasers** – Opti-Vu (3W/5W/10W)\n\n[View products →](${basePath}pages/general/Products.html)`
         },
         {
-            handler: () => `**Talk to Sales**\n\nOur sales experts are ready to assist you:\n📱 Phone: ${KB.contact.phone.join(" | ")}
-📧 Email: ${KB.contact.email.general}\n\n[Contact us →](${basePath}pages/general/contact.html)`
+            keywords: ["printer", "printers", "inkjet", "printing machine"],
+            handler: () => `**🖨️ Inkjet Printers at TechBott India:**\n\n**1. CIJ** – Continuous Inkjet\n**2. TIJ** – Thermal Inkjet\n**3. DOD** – Drop on Demand\n**4. PIJ** – Hi-Res Piezo Inkjet\n**5. TTO** – Thermal Transfer Over\n\n[View products →](${basePath}pages/general/Products.html)`
+        }
+    ];
+
+    const generalIntents = [
+        {
+            keywords: ["contact", "contact information", "contact us", "reach out", "phone number", "email address"],
+            handler: () => `**Contact TechBott India**\n\nWe'd love to hear from you!\n\n📍 **Address:** Plot No - 19/B, Phase 1, IDA Jeedimetla, Hyderabad, Telangana 500055\n📱 **Phone:** ${KB.contact.phone.join(" | ")}\n📱 **WhatsApp:** ${KB.contact.whatsapp}\n📧 **Email:** ${KB.contact.email.general}\n\n[Visit our Contact Page →](${basePath}pages/general/contact.html)`
+        },
+        {
+            keywords: ["products", "all products", "what do you sell", "machines", "equipment"],
+            handler: () => `**Our Products**\n\nWe provide a wide range of industrial coding and marking solutions:\n\n• **CIJ** (Continuous Inkjet)\n• **TIJ** (Thermal Inkjet)\n• **DOD/PIJ** (High-Res & Drop on Demand)\n• **TTO** (Thermal Transfer Over)\n• **Laser Marking** (CO2, Fiber, UV)\n• **Accessories & Consumables**\n\n[Explore all Products →](${basePath}pages/general/Products.html)`
+        },
+        {
+            keywords: ["industries", "industry", "sectors", "applications"],
+            handler: () => `**Industries We Serve**\n\nOur coding & marking solutions are trusted across multiple sectors:\n\n• Food & Beverages\n• Pharmaceuticals & Healthcare\n• Cosmetics & Personal Care\n• Packaging & Converting\n• Wire, Cable & Extrusion\n• Automotive & Electronics\n• Building Materials & Chemicals\n\n[Read more about Applications →](${basePath}pages/general/Applications.html)`
+        },
+        {
+            keywords: ["request quotation", "request a quotation", "get a quote", "quotation"],
+            handler: () => `**Request a Quotation**\n\nTo get a customized quote for your requirements, please contact our Sales team:\n📧 Email: ${KB.contact.email.general}\n📱 Phone/WhatsApp: ${KB.contact.whatsapp}\n\nOr visit our [Contact Page](${basePath}pages/general/contact.html).`
+        },
+        {
+            keywords: ["talk to sales", "sales team", "sales"],
+            handler: () => `**Talk to Sales**\n\nOur sales experts are ready to assist you:\n📱 Phone: ${KB.contact.phone.join(" | ")}\n📧 Email: ${KB.contact.email.general}\n\n[Contact us →](${basePath}pages/general/contact.html)`
         },
         {
             keywords: ["service support", "technical support", "contact technical support", "maintenance"],
