@@ -171,12 +171,7 @@
             <div class="row mt-5 justify-content-center">
                 <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="bg-light p-5 rounded">
-                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                            <!-- Note: User needs to add their Web3Forms Access Key here -->
-                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                            <input type="hidden" name="subject" value="New Quotation Request from Website">
-                            <input type="checkbox" name="botcheck" class="d-none" style="display: none;">
-
+                        <form id="contactForm" onsubmit="submitContactForm(event)">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -209,7 +204,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                                    <button class="btn btn-primary py-3 px-5" type="submit">Send via WhatsApp</button>
                                 </div>
                             </div>
                         </form>
@@ -222,6 +217,24 @@
     <!-- Contact End -->
 
     <script>
+        function submitContactForm(e) {
+            e.preventDefault();
+            const form = document.getElementById('contactForm');
+            const formData = new FormData(form);
+            
+            const name = formData.get('name') || 'N/A';
+            const email = formData.get('email') || 'N/A';
+            const phone = formData.get('phone') || 'N/A';
+            const product = formData.get('product') || 'N/A';
+            const message = formData.get('message') || 'N/A';
+            
+            const waText = encodeURIComponent(`New Quotation/Contact Request\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nProduct Interest: ${product}\n\nMessage:\n${message}`);
+            const waUrl = `https://wa.me/+917337335751?text=${waText}`;
+            
+            window.open(waUrl, '_blank');
+            form.reset();
+        }
+
         // Auto-fill product from URL if coming from Chatbot "Get Quote"
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
