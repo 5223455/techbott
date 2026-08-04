@@ -941,7 +941,7 @@
         chatWindow.innerHTML = `
             <div class="mavya-header">
                 <button class="mavya-back-btn" title="Close chat">✕</button>
-                <img class="mavya-avatar" src="${basePath}img/bagging-machine.png" alt="TechBott India" style="object-fit: cover;">
+                <img class="mavya-avatar" src="${basePath}img/chatbotlogo.jpeg" alt="TechBott India" style="object-fit: cover; pointer-events: none; user-select: none; -webkit-user-drag: none;" oncontextmenu="return false;" draggable="false">
                 <div class="mavya-header-info">
                     <span>Mavya</span>
                     <span>TechBott India Assistant</span>
