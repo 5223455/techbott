@@ -362,9 +362,16 @@
 
         // If someone asks for a recommendation, suggestion, or "which printer", open the overlay
         const recRegex = /recommend|suggest|which printer|best printer|what printer|which application|which machine|printer for my product|which is best|best for|what to use for|what should i use|suitable for|which one is best|which one should i/i;
-        if (q === "✨ ai product recommendation" || recRegex.test(q)) {
+        if (q === "✨ ai product recommendation") {
             setTimeout(() => openOverlay(), 100);
-            return "I'd be happy to help you find the right solution! Opening the **AI Product Recommendation Assistant**... 🤖";
+            return "Opening the **AI Product Recommendation Assistant** for you! 🤖";
+        }
+        if (recRegex.test(q)) {
+            chatWizardActive = true;
+            chatWizardStep = 0;
+            chatWizardAnswers = {};
+            setTimeout(() => processChatWizardStep(), 800);
+            return "I'd be happy to help you find the right solution! Let me ask you a few quick questions.";
         }
 
         for (const intent of productIntents) {
@@ -1025,6 +1032,9 @@
         const iconClose = toggleBtn.querySelector('.mavya-icon-close');
 
         let isOpen = false;
+        let chatWizardActive = false;
+        let chatWizardStep = 0;
+        let chatWizardAnswers = {};
 
         function toggleChat() {
             isOpen = !isOpen;
@@ -1037,6 +1047,53 @@
 
         toggle.addEventListener('click', toggleChat);
         closeBtn.addEventListener('click', toggleChat);
+
+        function processChatWizardStep() {
+            if (chatWizardStep >= REC_QUESTIONS.length) {
+                finishChatWizard();
+                return;
+            }
+            const qObj = REC_QUESTIONS[chatWizardStep];
+            
+            let optsHtml = '';
+            qObj.opts.forEach((opt) => {
+                if (!opt.isOther) {
+                    optsHtml += `<button class="mavya-option-btn" data-wizard="${opt.text}">${opt.text}</button>`;
+                }
+            });
+            
+            let msg = `**${qObj.label}**: ${qObj.q}\n\n`;
+            if (optsHtml) {
+                 msg += `<div class="mavya-options" style="margin-top: 10px; gap: 8px; flex-direction: column;">${optsHtml}</div>`;
+            }
+            if (qObj.opts.some(o => o.isOther)) {
+                 msg += `\n*(Or simply type your answer)*`;
+            }
+            
+            addMessage(msg, 'bot');
+        }
+
+        function finishChatWizard() {
+            chatWizardActive = false;
+            const matchedProducts = calculateRecommendations(chatWizardAnswers);
+            
+            if (matchedProducts.length === 0) {
+                addMessage("Based on your answers, I couldn't find an exact match. Please contact our sales team for a custom solution!", 'bot');
+                return;
+            }
+
+            let bestMatch = matchedProducts[0];
+            let p = KB.products[bestMatch.key];
+            
+            let recMsg = `🎉 **I have a recommendation for you!**\n\n`;
+            recMsg += `Based on your needs, the best solution is the **${p.name}**.\n\n`;
+            recMsg += `⚙️ **Key Features:** ${p.features}\n\n`;
+            if (p.page) {
+                recMsg += `[View Details & Specs →](${basePath}${p.page})`;
+            }
+            
+            addMessage(recMsg, 'bot');
+        }
 
         function getTimeString() {
             const now = new Date();
