@@ -1,0 +1,32 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 90" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- TTO Printer - thermal transfer overprinter mechanism -->
+  <!-- Main housing -->
+  <rect x="10" y="10" width="60" height="55" rx="3"/>
+  <!-- Control panel on front -->
+  <rect x="16" y="16" width="20" height="12" rx="1"/>
+  <rect x="18" y="18" width="16" height="8" rx="1"/>
+  <!-- Buttons -->
+  <circle cx="44" cy="20" r="2"/>
+  <circle cx="52" cy="20" r="2"/>
+  <!-- Ribbon supply roll (top) -->
+  <circle cx="30" cy="38" r="8"/>
+  <circle cx="30" cy="38" r="3"/>
+  <!-- Ribbon take-up roll -->
+  <circle cx="54" cy="48" r="6"/>
+  <circle cx="54" cy="48" r="2.5"/>
+  <!-- Ribbon path -->
+  <path d="M30 46 L26 56 L40 60 L54 54" stroke-width="1.5"/>
+  <!-- Print head mechanism -->
+  <rect x="22" y="56" width="18" height="6" rx="1"/>
+  <!-- Product passing underneath -->
+  <line x1="6" y1="68" x2="94" y2="68"/>
+  <!-- Conveyor rollers -->
+  <circle cx="14" cy="72" r="3"/>
+  <circle cx="86" cy="72" r="3"/>
+  <!-- Side panel -->
+  <rect x="70" y="10" width="14" height="55" rx="1"/>
+  <!-- Ventilation -->
+  <line x1="73" y1="18" x2="81" y2="18"/>
+  <line x1="73" y1="22" x2="81" y2="22"/>
+  <line x1="73" y1="26" x2="81" y2="26"/>
+</svg>

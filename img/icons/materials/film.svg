@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Main roll body -->
+  <path d="M24 12 L44 12 A12 20 0 0 1 44 52 L24 52" fill="#e8eaed" stroke="#555" stroke-width="2"/>
+  
+  <!-- Roll side profile -->
+  <ellipse cx="24" cy="32" rx="12" ry="20" fill="#cfd8dc" stroke="#555" stroke-width="2"/>
+  
+  <!-- Core -->
+  <ellipse cx="24" cy="32" rx="4" ry="7" fill="#333" stroke="#555" stroke-width="2"/>
+  
+  <!-- Sheet unwinding -->
+  <path d="M38 52 Q 48 52 54 62 L 28 62 Q 22 52 14 52" fill="#f8f9fa" stroke="#555" stroke-width="2"/>
+  
+  <!-- Reflection/Highlight on the roll -->
+  <path d="M28 15 L40 15" stroke="#ffffff" stroke-width="2" opacity="0.8"/>
+  <path d="M28 20 L42 20" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+</svg>

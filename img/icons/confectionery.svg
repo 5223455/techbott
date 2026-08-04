@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" fill="none" stroke="currentColor" stroke-width="3.5">
+  <!-- Wrapper bottom portion -->
+  <rect x="25" y="68" width="50" height="48" rx="3"/>
+  <!-- Wrapper label -->
+  <rect x="30" y="98" width="28" height="8" rx="1" stroke-width="1.5"/>
+  <!-- Wrapper folded flaps -->
+  <path d="M25 68 L18 58 L38 52 L50 48 L62 52 L82 58 L75 68" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="38" y1="52" x2="35" y2="68" stroke-width="1.5"/>
+  <line x1="62" y1="52" x2="65" y2="68" stroke-width="1.5"/>
+  <!-- Chocolate bar (above wrapper) -->
+  <rect x="28" y="5" width="44" height="50" rx="2"/>
+  <!-- Grid vertical lines -->
+  <line x1="39" y1="5" x2="39" y2="55" stroke-width="1.5"/>
+  <line x1="50" y1="5" x2="50" y2="55" stroke-width="1.5"/>
+  <line x1="61" y1="5" x2="61" y2="55" stroke-width="1.5"/>
+  <!-- Grid horizontal lines -->
+  <line x1="28" y1="15" x2="72" y2="15" stroke-width="1.5"/>
+  <line x1="28" y1="25" x2="72" y2="25" stroke-width="1.5"/>
+  <line x1="28" y1="35" x2="72" y2="35" stroke-width="1.5"/>
+  <line x1="28" y1="45" x2="72" y2="45" stroke-width="1.5"/>
+</svg>

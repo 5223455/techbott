@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Box body -->
+  <path d="M10 22h44v30H10z" fill="#f5e6d3" stroke="#8B6914"/>
+  <!-- Box flaps open -->
+  <path d="M10 22l6-10h32l6 10" fill="#e8d5b7" stroke="#8B6914"/>
+  <path d="M16 12l4-4h24l4 4" fill="#dfc9a5" stroke="#8B6914"/>
+  <!-- Flap creases -->
+  <path d="M32 8v14" stroke="#8B6914" stroke-dasharray="2 2"/>
+  <!-- Tape -->
+  <rect x="26" y="18" width="12" height="8" rx="1" fill="#c4a265" stroke="#8B6914" opacity="0.7"/>
+  <!-- Side panel lines -->
+  <line x1="10" y1="37" x2="54" y2="37" stroke="#8B6914" opacity="0.4"/>
+  <!-- Handle holes -->
+  <ellipse cx="22" cy="30" rx="4" ry="2.5" fill="none" stroke="#8B6914"/>
+  <ellipse cx="42" cy="30" rx="4" ry="2.5" fill="none" stroke="#8B6914"/>
+  <!-- Shadow -->
+  <path d="M12 52h40" stroke="#8B6914" opacity="0.2" stroke-width="3"/>
+</svg>

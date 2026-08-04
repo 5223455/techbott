@@ -1,0 +1,31 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 100" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- HX-Ultro - compact modular TIJ print head with tablet -->
+  <!-- Tablet behind -->
+  <rect x="52" y="6" width="46" height="68" rx="3"/>
+  <rect x="56" y="10" width="38" height="56" rx="2"/>
+  <!-- Home button -->
+  <circle cx="75" cy="70" r="2"/>
+  <!-- Print head unit (front, compact modular block) -->
+  <!-- Main body -->
+  <rect x="8" y="16" width="40" height="50" rx="2"/>
+  <!-- Top section (lighter) -->
+  <rect x="8" y="16" width="40" height="20" rx="2"/>
+  <!-- Port labels area -->
+  <circle cx="16" cy="24" r="2"/>
+  <circle cx="24" cy="24" r="2"/>
+  <!-- Antenna -->
+  <line x1="12" y1="16" x2="12" y2="4"/>
+  <circle cx="12" cy="3" r="2"/>
+  <!-- Ink connectors (bottom) -->
+  <circle cx="20" cy="72" r="2.5"/>
+  <circle cx="32" cy="72" r="2.5"/>
+  <!-- Nozzle plate at very bottom -->
+  <rect x="14" y="76" width="24" height="4" rx="1"/>
+  <!-- Drip nozzle -->
+  <line x1="26" y1="80" x2="26" y2="86"/>
+  <path d="M22 86 L26 92 L30 86" fill="none" stroke-width="2"/>
+  <!-- Mounting bracket -->
+  <rect x="4" y="66" width="48" height="3" rx="1"/>
+  <!-- Cable connector right side -->
+  <path d="M48 30 C52 30, 52 36, 48 36" stroke-width="2"/>
+</svg>

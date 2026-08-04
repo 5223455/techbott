@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Fabric roll -->
+  <path d="M18 10l14 6 14-6v44l-14 6-14-6z" fill="#e8d5e8" stroke="#8a5a8a"/>
+  <!-- Center fold -->
+  <line x1="32" y1="16" x2="32" y2="54" stroke="#8a5a8a" stroke-width="1"/>
+  <!-- Weave pattern - horizontal -->
+  <path d="M18 20c4 1.5 9 2 14 0.5s9-0.5 14 1" stroke="#b088b0" stroke-width="1" opacity="0.7"/>
+  <path d="M18 28c4 1.5 9 2 14 0.5s9-0.5 14 1" stroke="#b088b0" stroke-width="1" opacity="0.7"/>
+  <path d="M18 36c4 1.5 9 2 14 0.5s9-0.5 14 1" stroke="#b088b0" stroke-width="1" opacity="0.7"/>
+  <path d="M18 44c4 1.5 9 2 14 0.5s9-0.5 14 1" stroke="#b088b0" stroke-width="1" opacity="0.7"/>
+  <!-- Cross threads -->
+  <path d="M22 12v44" stroke="#b088b0" stroke-width="0.8" opacity="0.5"/>
+  <path d="M27 13v44" stroke="#b088b0" stroke-width="0.8" opacity="0.5"/>
+  <path d="M37 13v44" stroke="#b088b0" stroke-width="0.8" opacity="0.5"/>
+  <path d="M42 12v44" stroke="#b088b0" stroke-width="0.8" opacity="0.5"/>
+  <!-- Thread/needle detail -->
+  <path d="M8 14c3 0 6 2 10 2" stroke="#8a5a8a" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <circle cx="6" cy="14" r="1.5" fill="#8a5a8a"/>
+  <!-- Fabric drape hint -->
+  <path d="M46 52c2 1 4 2 5 4" stroke="#8a5a8a" stroke-width="1" opacity="0.5"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 120" fill="none" stroke="currentColor" stroke-width="3.5">
+  <!-- Can body sides -->
+  <line x1="15" y1="22" x2="15" y2="100"/>
+  <line x1="75" y1="22" x2="75" y2="100"/>
+  <!-- Top ellipse -->
+  <ellipse cx="45" cy="22" rx="30" ry="10"/>
+  <!-- Bottom ellipse -->
+  <ellipse cx="45" cy="100" rx="30" ry="10"/>
+  <!-- Pull tab on top -->
+  <ellipse cx="45" cy="16" rx="18" ry="6"/>
+  <path d="M40 14 L38 10 Q45 7 52 10 L50 14" stroke-width="1.5"/>
+  <!-- Horizontal ridges -->
+  <path d="M15 35 Q45 42 75 35" stroke-width="1.5"/>
+  <path d="M15 88 Q45 95 75 88" stroke-width="1.5"/>
+</svg>

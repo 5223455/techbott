@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Vase body -->
+  <path d="M24 10c-2 0-4 3-5 8l-4 22c-1 5 1 9 5 11l10 3h4l10-3c4-2 6-6 5-11l-4-22c-1-5-3-8-5-8" fill="#e8ddd4"/>
+  <!-- Vase rim -->
+  <ellipse cx="32" cy="10" rx="8" ry="3.5" fill="#d4c4b0" stroke="#7a6040"/>
+  <!-- Inner rim -->
+  <ellipse cx="32" cy="10" rx="5" ry="2" fill="#c4b49a" stroke="#7a6040" stroke-width="1"/>
+  <!-- Decorative band -->
+  <path d="M21 30c6 2 16 2 22 0" stroke="#7a6040" stroke-width="1.5"/>
+  <path d="M20 34c6 2 18 2 24 0" stroke="#7a6040" stroke-width="1.5"/>
+  <!-- Glaze highlight -->
+  <path d="M26 18c1-2 2-3 4-3" stroke="#fff" opacity="0.5" stroke-width="1.5"/>
+  <!-- Pattern details -->
+  <path d="M22 38c2 1 4 0 5-1s3-1 5 0 4 0 5-1 3-1 5 0" stroke="#7a6040" opacity="0.5" stroke-width="1"/>
+  <!-- Base shadow -->
+  <ellipse cx="32" cy="54" rx="10" ry="2" fill="#7a6040" opacity="0.15"/>
+</svg>

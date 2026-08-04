@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Metal plate -->
+  <rect x="8" y="18" width="48" height="28" rx="3" fill="#b8c4cc" stroke="#6a7a85"/>
+  <!-- Brushed metal texture -->
+  <line x1="10" y1="24" x2="54" y2="24" stroke="#9aacb5" stroke-width="0.5" opacity="0.6"/>
+  <line x1="10" y1="28" x2="54" y2="28" stroke="#9aacb5" stroke-width="0.5" opacity="0.4"/>
+  <line x1="10" y1="32" x2="54" y2="32" stroke="#9aacb5" stroke-width="0.5" opacity="0.6"/>
+  <line x1="10" y1="36" x2="54" y2="36" stroke="#9aacb5" stroke-width="0.5" opacity="0.4"/>
+  <line x1="10" y1="40" x2="54" y2="40" stroke="#9aacb5" stroke-width="0.5" opacity="0.6"/>
+  <!-- Bolt holes -->
+  <circle cx="16" cy="24" r="2.5" fill="#8a9aa5" stroke="#6a7a85" stroke-width="1.5"/>
+  <circle cx="48" cy="24" r="2.5" fill="#8a9aa5" stroke="#6a7a85" stroke-width="1.5"/>
+  <circle cx="16" cy="40" r="2.5" fill="#8a9aa5" stroke="#6a7a85" stroke-width="1.5"/>
+  <circle cx="48" cy="40" r="2.5" fill="#8a9aa5" stroke="#6a7a85" stroke-width="1.5"/>
+  <!-- Bolt cross slots -->
+  <line x1="15" y1="24" x2="17" y2="24" stroke="#555" stroke-width="1"/>
+  <line x1="16" y1="23" x2="16" y2="25" stroke="#555" stroke-width="1"/>
+  <line x1="47" y1="24" x2="49" y2="24" stroke="#555" stroke-width="1"/>
+  <line x1="48" y1="23" x2="48" y2="25" stroke="#555" stroke-width="1"/>
+  <!-- Highlight -->
+  <path d="M12 20h20" stroke="#dde8f0" opacity="0.6" stroke-width="2"/>
+  <!-- Shadow -->
+  <path d="M10 48h44" stroke="#6a7a85" opacity="0.2" stroke-width="3"/>
+</svg>

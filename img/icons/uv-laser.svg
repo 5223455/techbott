@@ -1,0 +1,42 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 120" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Stand base -->
+  <rect x="55" y="100" width="44" height="6" rx="1.5"/>
+  <rect x="58" y="96" width="38" height="4" rx="1"/>
+  <!-- Leveling feet -->
+  <circle cx="60" cy="110" r="3.5"/>
+  <line x1="60" y1="106" x2="60" y2="107"/>
+  <circle cx="94" cy="110" r="3.5"/>
+  <line x1="94" y1="106" x2="94" y2="107"/>
+  <!-- Vertical pillar -->
+  <rect x="72" y="16" width="10" height="80" rx="1"/>
+  <!-- Horizontal laser arm -->
+  <rect x="14" y="10" width="62" height="12" rx="2"/>
+  <!-- Brand panel on arm -->
+  <rect x="38" y="13" width="20" height="6" rx="1"/>
+  <!-- Touchscreen on top-left -->
+  <rect x="16" y="2" width="24" height="12" rx="2"/>
+  <rect x="19" y="4" width="18" height="8" rx="1"/>
+  <!-- Laser head (left end, pointing down) -->
+  <rect x="14" y="22" width="12" height="8" rx="1"/>
+  <line x1="20" y1="30" x2="20" y2="34"/>
+  <line x1="17" y1="34" x2="23" y2="34"/>
+  <!-- Adjustment knob -->
+  <line x1="77" y1="8" x2="77" y2="10"/>
+  <circle cx="77" cy="6" r="3"/>
+  <!-- Cable from arm to chiller -->
+  <path d="M50 22 C48 35, 44 42, 38 48" stroke-width="2"/>
+  <!-- CW-5200 Chiller unit -->
+  <rect x="8" y="50" width="36" height="46" rx="3"/>
+  <!-- Chiller handles -->
+  <path d="M14 50 L14 46 L38 46 L38 50" stroke-width="2" fill="none"/>
+  <!-- Chiller display -->
+  <rect x="12" y="72" width="10" height="5" rx="1"/>
+  <!-- Chiller button -->
+  <circle cx="28" cy="74" r="2.5"/>
+  <!-- Chiller vents -->
+  <line x1="14" y1="84" x2="38" y2="84"/>
+  <line x1="14" y1="87" x2="38" y2="87"/>
+  <line x1="14" y1="90" x2="38" y2="90"/>
+  <!-- CW-5200 label -->
+  <rect x="14" y="58" width="28" height="8" rx="1"/>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Fiber Laser Marking Machine -->
+  <!-- Base rail with T-slot profile -->
+  <rect x="15" y="100" width="70" height="6" rx="1.5"/>
+  <rect x="20" y="96" width="60" height="4" rx="1"/>
+  <!-- Leveling feet/wheels -->
+  <circle cx="22" cy="110" r="3.5"/>
+  <circle cx="42" cy="110" r="3.5"/>
+  <circle cx="62" cy="110" r="3.5"/>
+  <circle cx="82" cy="110" r="3.5"/>
+  <!-- Vertical pillar -->
+  <rect x="46" y="30" width="8" height="66" rx="1"/>
+  <!-- Fiber laser source box (blue body, left side) -->
+  <rect x="18" y="32" width="28" height="22" rx="3"/>
+  <!-- Ventilation lines on box -->
+  <line x1="22" y1="38" x2="22" y2="50"/>
+  <line x1="26" y1="38" x2="26" y2="50"/>
+  <line x1="30" y1="38" x2="30" y2="50"/>
+  <!-- E-stop button on top -->
+  <circle cx="40" cy="32" r="4"/>
+  <circle cx="40" cy="32" r="2.5" fill="currentColor"/>
+  <!-- Touchscreen (right side, on arm) -->
+  <rect x="58" y="34" width="26" height="20" rx="3"/>
+  <rect x="61" y="37" width="20" height="14" rx="1.5"/>
+  <!-- Screen content lines -->
+  <line x1="64" y1="42" x2="78" y2="42"/>
+  <line x1="64" y1="46" x2="74" y2="46"/>
+  <!-- Camera/sensor on top -->
+  <rect x="68" y="28" width="6" height="6" rx="1"/>
+  <!-- Fiber cable from box to head -->
+  <path d="M32 54 C32 70, 50 72, 50 78" stroke-width="2"/>
+  <!-- Marking head (bottom of pillar) -->
+  <rect x="42" y="78" width="16" height="14" rx="2"/>
+  <!-- Lens/aperture -->
+  <circle cx="50" cy="85" r="4"/>
+  <circle cx="50" cy="85" r="2"/>
+  <!-- Laser beam indicator -->
+  <line x1="50" y1="92" x2="50" y2="96" stroke-dasharray="2 2"/>
+  <!-- Height adjustment scale on pillar -->
+  <line x1="54" y1="40" x2="54" y2="70" stroke-width="1" stroke-dasharray="1 3"/>
+</svg>

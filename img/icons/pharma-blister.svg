@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 100" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Blister pack of capsules -->
+  <!-- Outer blister tray -->
+  <rect x="10" y="15" width="90" height="70" rx="6"/>
+  <!-- Row 1 capsule blisters (5 across) -->
+  <ellipse cx="28" cy="35" rx="10" ry="8"/>
+  <ellipse cx="55" cy="35" rx="10" ry="8"/>
+  <ellipse cx="82" cy="35" rx="10" ry="8"/>
+  <!-- Row 2 capsule blisters -->
+  <ellipse cx="28" cy="58" rx="10" ry="8"/>
+  <ellipse cx="55" cy="58" rx="10" ry="8"/>
+  <ellipse cx="82" cy="58" rx="10" ry="8"/>
+  <!-- Capsule divider lines inside blisters -->
+  <line x1="18" y1="35" x2="38" y2="35" stroke-width="2"/>
+  <line x1="45" y1="35" x2="65" y2="35" stroke-width="2"/>
+  <line x1="72" y1="35" x2="92" y2="35" stroke-width="2"/>
+  <line x1="18" y1="58" x2="38" y2="58" stroke-width="2"/>
+  <line x1="45" y1="58" x2="65" y2="58" stroke-width="2"/>
+  <line x1="72" y1="58" x2="92" y2="58" stroke-width="2"/>
+  <!-- Box/carton behind (slightly offset) -->
+  <path d="M15 12 L20 6 L105 6 L105 80 L100 85" stroke-width="2.5" stroke-dasharray="4 3"/>
+  <!-- Batch/expiry text line on tray -->
+  <line x1="20" y1="78" x2="50" y2="78" stroke-width="2"/>
+  <line x1="55" y1="78" x2="65" y2="78" stroke-width="2"/>
+</svg>
