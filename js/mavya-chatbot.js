@@ -833,7 +833,8 @@
                         state: 'Not Provided',
                         comments: `Brochure downloaded via AI Assistant`,
                         productName: productName,
-                        optIn: true
+                        optIn: true,
+                        sendTo: 'marketing@techbottindia.com'
                     };
 
                     fetch(API_BASE + '/api/enquiry', {
