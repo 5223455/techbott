@@ -37,7 +37,9 @@
                 brand: "TechBott",
                 models: "Opti CO2 Laser (30W)",
                 features: "Up to 1,500 chars/sec marking speed, Class 4 (IEC/EN 60825-1:2014) rating, Air Cooled, IP54/IP65 ratings, TCP/IP & RS232 support.",
-                applications: "Glass, Carton, Film, Foils, Plastics, Rubber, Paper, Textiles, Ceramic, Wood.",
+                applications: "Food & Beverage (PET, Glass, Cartons, Flexible), Pharmaceutical, FMCG, Packaging, Wire & Cable, Electronics, Automotive, Textile, Wood & Furniture.",
+                materials: "Paper, Cardboard, Corrugated cartons, Wood, MDF, Acrylic, Leather, Rubber, Glass, PET, PVC, PP, PE, BOPP films, Laminated pouches, Ceramics.",
+                printContent: "MFG/EXP Dates, Batch/Lot No, Serial No, Time/Shift Code, QR/Data Matrix, 1D Barcodes, Logos, Variable Data, Traceability Codes.",
                 page: "pages/technology/CO2-lasers.html"
             },
             "fiber lasers": {
@@ -45,7 +47,9 @@
                 brand: "TechBott",
                 models: "OptiFy Fiber Laser (20W, 30W, 50W, 100W)",
                 features: "Up to 2,000 chars/sec marking speed, Class 4, Air Cooled, Ytterbium (Yb) Pulsed Fiber. Supports OCR fonts, permanent laser marking, variable data, and barcodes.",
-                applications: "Metal, Plastics, Wire, Rubber, Ceramic.",
+                applications: "Automotive (Engine parts, VIN plates), Electronics & Electrical, Medical Devices, Aerospace, Tools & Hardware, Industrial Manufacturing, Jewellery, Packaging Industry (Metal labels).",
+                materials: "Metals (Stainless Steel, Mild Steel, Aluminium, Brass, Copper, Titanium, Gold, Silver, Platinum), Engineering Plastics (ABS, PC, Nylon, PBT).",
+                printContent: "MFG/EXP Dates, Batch/Lot No, Serial/VIN Numbers, Time/Shift Code, QR/Data Matrix, 1D Barcodes, UID Codes, Logos, Part Numbers.",
                 page: "pages/technology/Fiber-lasers.html"
             },
             "uv lasers": {
@@ -53,7 +57,9 @@
                 brand: "TechBott",
                 models: "Opti-Vu3x (3W), Opti-Vu5x (5W), Opti-Vu10x (10W)",
                 features: "Ultraviolet light emission for precision marking. Multi-port marking, external trigger signals.",
-                applications: "High-resolution engraving on sensitive materials",
+                applications: "Pharmaceuticals (Blister packs, Ampoules), Food & Beverage (PET/Glass bottles, Caps), Cosmetics & Personal Care, Electronics (PCBs), Medical Devices, Packaging Industry (Flexible, Shrink sleeves, Cartons).",
+                materials: "Plastic (PET, HDPE, PP, PE, PVC), Glass, Acrylic, Polycarbonate, ABS, Silicone, Rubber, Paper, Cardboard, Labels, Flexible films, Laminated pouches, Ceramics.",
+                printContent: "MFG/EXP Dates, Batch/Lot No, Serial No, QR/Data Matrix, 1D Barcodes, Logos, Variable Data, Traceability Codes.",
                 page: "pages/technology/UV-Lasers.html"
             },
             "cij printers": {
@@ -61,7 +67,9 @@
                 brand: "TechBott",
                 models: "300 Series (Model: 3260)",
                 features: "Print height 2-20mm, 10.1-inch color touch screen, IP55 protection, 304 stainless steel, RoHS/CE/BIS certified, 22kg. Supports 1-5 lines. Over 40+ languages.",
-                applications: "Carton, Plastic, Metal, Pipe, Stone, Cable, Glass, Electronic components, Auto parts, Industrial chemical packaging.",
+                applications: "Food & Beverage (PET/Glass bottles, Pouches, Cartons), Pharmaceuticals (Blister packs, Labels), FMCG (Shampoo, Cosmetics), Packaging Industry, Wire & Cable, Building Materials, Automotive, Electronics, Chemical, Seed & Agriculture.",
+                materials: "Plastic (PET, HDPE, PP, PVC), Glass, Metal, Paper, Cardboard, Flexible films, Laminates, Rubber, Wood, Foil.",
+                printContent: "MFG/EXP Dates, Batch/Lot No, Serial No, Time/Shift Code, Logos, Barcodes, QR Codes, Data Matrix Codes, Variable Data.",
                 page: "pages/technology/Continuous-Inkjet-(CIJ)-printers.html"
             },
             "tij printers": {
@@ -69,7 +77,9 @@
                 brand: "TechBott",
                 models: "HP Thermal Ink Jet T2.5 Technology based",
                 features: "Resolution 150-600 dpi, printing height 1-25mm, printing speed up to 240m/min. 5\" and 7\" touch screen. GS1 Data Matrix, Zero breakdown, Ethernet/USB/RS232 connectivity.",
-                applications: "Carton, Paper, Film, Foils, Plastics, Anti-counterfeiting.",
+                applications: "Food & Beverage (PET/Plastic bottles, Milk pouches), Pharmaceuticals (Blister, Labels), FMCG (Cosmetics, Shampoo), Packaging Industry (Laminated sheets, Cartons), Logistics.",
+                materials: "Plastic, Laminated pouches, Glass, Metal, Paper, Cardboard, Cartons, Labels, Flexible packaging (Depends on porous/non-porous ink).",
+                printContent: "MFG/EXP Dates, Batch/Lot No, Serial No, Time/Shift Code, Barcode, QR Code, Data Matrix, Logos, Variable Data.",
                 page: "pages/technology/Thermal-Inkjet-(TIJ)-printers.html"
             },
             "dod printers": {
@@ -77,7 +87,9 @@
                 brand: "TechBott",
                 models: "Large character DOD series",
                 features: "Print height 10-70mm, high-speed marking up to 90 m/min. Oil-based and solvent-based ink. Rugged design, touch screen interface, low maintenance valve-jet technology.",
-                applications: "Carton, Wood, Metal, Plastics, Paper, Rubber.",
+                applications: "Packaging Industry (Corrugated, Master cartons), Food & Beverage (Shipping cases, Dairy), Pharmaceutical (Master cartons), FMCG, Seeds & Agriculture, Logistics & Warehousing, Building Materials (Cement, Tiles), Automotive.",
+                materials: "Corrugated cardboard, Cardboard, Paper, Kraft paper, Paperboard, Wood, Fabric bags, Plastic films & Laminated pouches (with UV/solvent ink), Coated cartons.",
+                printContent: "MFG/EXP Dates, Batch/Lot No, Serial No, Product Name/Description, Company Logo, 1D/QR/Data Matrix/GS1 Barcodes, Dynamic Numbering, Variable Data.",
                 page: "pages/technology/Drop-on-Demand-(DOD)-printers.html"
             },
             "pij printers": {
@@ -85,7 +97,9 @@
                 brand: "TechBott",
                 models: "TB Series (Recirculating) & 8 Series (High-Speed)",
                 features: "Up to 600 DPI, speeds up to 240 m/min, Android touchscreen, UV ink & oil-based ink support, SDK development kit, multi-angle installation.",
-                applications: "Carton, Cables, Wood, Plastics, Rubber, Metal, Packaging Bags, Ceramics.",
+                applications: "Corrugated Cartons, Mono Cartons (Pharma, FMCG), Paper & Packaging, Food & Beverage, Logistics & Warehousing, Building Materials (Cement, Ceramics), Seeds & Agriculture.",
+                materials: "Corrugated cardboard, Cardboard, Paper, Kraft paper, Paperboard, Wood, Fabric bags, Plastic films and laminated pouches (using UV/solvent ink).",
+                printContent: "MFG/EXP Dates, Batch/Lot No, Serial No, Product Description, Company Logo, 1D/QR/Data Matrix/GS1-128 Barcodes, Variable Data, Graphics.",
                 page: "pages/technology/Hi-Res-Piezo-Inkjet-(PIJ)-printers.html"
             },
             "tto printers": {
@@ -108,6 +122,9 @@
                 name: "Hx-Megalo",
                 brand: "MapleJet",
                 features: "Large format TIJ printer for high-resolution printing on cartons and outer cases.",
+                applications: "Corrugated Cartons & Boxes (Shipping, Export), Paper & Packaging, Logistics & Warehousing, Food & Beverage, Pharmaceutical, FMCG, Building Materials.",
+                materials: "Oil-Based Ink: Corrugated cartons, Cardboard, Paper, Wood. UV Ink: Flexible films, Laminated pouches, Plastic pouches, Coated packaging.",
+                printContent: "MFG/EXP Dates, Batch/Lot No, Serial No, Barcode (1D)/QR/Data Matrix, Variable Data, Logos, Graphics, Product Description, Shipping Info. (Up to 70mm print height).",
                 page: "pages/products/Hx-Megalo.html",
                 pdf: "brochures/Hx_Megalo_Catalogue_IN.pdf"
             },
@@ -115,6 +132,9 @@
                 name: "Hx-Ultro",
                 brand: "MapleJet",
                 features: "Versatile thermal inkjet printer with superior print quality for diverse packaging applications.",
+                applications: "Flexible Packaging (Pouches, Roll stock, Wrappers), Food & Beverage (Snacks, Frozen), FMCG (Detergent, Shampoo sachets), Pharmaceutical (Medical pouches), Industrial Packaging.",
+                materials: "BOPP films, PET films, PE films, Laminated films, Flexible packaging, Aluminum foil, Plastic pouches, Non-porous packaging materials.",
+                printContent: "MFG/EXP Dates, Batch/Lot No, Serial No, QR/Data Matrix, 1D Barcodes, Logos, Variable Data.",
                 page: "pages/products/ultro.html",
                 pdf: "brochures/Hx_Ultro_Catalogue_IN.pdf"
             },
@@ -129,6 +149,9 @@
                 name: "Hx Nitro TIJ",
                 brand: "MapleJet",
                 features: "Compact and fast TIJ printer ideal for high-speed production lines and small character coding.",
+                applications: "Food & Beverage (PET/Plastic bottles, Milk pouches), Pharmaceuticals (Blister, Labels), FMCG (Cosmetics, Shampoo), Packaging Industry (Laminated sheets, Cartons), Logistics.",
+                materials: "Plastic, Laminated pouches, Glass, Metal, Paper, Cardboard, Cartons, Labels, Flexible packaging (Depends on porous/non-porous ink).",
+                printContent: "MFG/EXP Dates, Batch/Lot No, Serial No, Time/Shift Code, Barcode, QR Code, Data Matrix, Logos, Variable Data.",
                 page: "pages/products/Hx-Nitro.html",
                 pdf: "brochures/Hx_Nitro_Catalogue_IN.pdf"
             },
@@ -136,6 +159,9 @@
                 name: "Hx-Cartro",
                 brand: "MapleJet",
                 features: "Cartridge-based TIJ printer offering easy maintenance and quick ink changeover for versatile coding.",
+                applications: "Corrugated Cartons, Packaging Industry (Secondary packaging), Food & Beverage, Pharmaceutical, FMCG, Logistics & Warehousing, Industrial Manufacturing.",
+                materials: "Corrugated cartons, Cardboard, Kraft paper, Paperboard, Paper cartons, Porous packaging materials.",
+                printContent: "MFG/EXP Dates, Batch/Lot No, Serial No, Product Name, Alphanumeric Text, 1D/QR/Data Matrix Barcodes, Logos, Variable Data, External DB Info, Counters.",
                 page: "pages/products/Hx-Cartro.html",
                 pdf: "brochures/Hx_Cartro_Catalogue_IN.pdf"
             },
@@ -144,7 +170,9 @@
                 brand: "Leibinger",
                 models: "JET2neo",
                 features: "Sealtronic print head technology, 7-inch touch screen display. Automated Sealtronic system prevents ink drying. Windows-based interface.",
-                applications: "Carton, Plastics, Metal, Glass, Wire, Wood.",
+                applications: "Food & Beverage (PET/Glass bottles, Pouches, Cartons), Pharmaceuticals (Blister packs, Labels), FMCG (Shampoo, Cosmetics), Packaging Industry, Wire & Cable, Building Materials, Automotive, Electronics, Chemical, Seed & Agriculture.",
+                materials: "Plastic (PET, HDPE, PP, PVC), Glass, Metal, Paper, Cardboard, Flexible films, Laminates, Rubber, Wood, Foil.",
+                printContent: "MFG/EXP Dates, Batch/Lot No, Serial No, Time/Shift Code, Logos, Barcodes, QR Codes, Data Matrix Codes, Variable Data.",
                 page: "pages/technology/Leibinger.html",
                 pdf: "brochures/JET2-NEO_Flyer_.pdf"
             },
@@ -153,7 +181,9 @@
                 brand: "Leibinger",
                 models: "JET3eco",
                 features: "Over 800 software functions, prints up to 5 lines. Print speeds up to 10 m/s. IP54/IP65 ratings, Sealtronic technology, multi-language UI.",
-                applications: "Carton, Plastics, Metal, Glass, Cables, Electronics.",
+                applications: "Food & Beverage (High-speed bottling, Tetra packs), Pharmaceuticals (Tablet bottles, Blister packs), FMCG, Packaging Industry, Wire & Cable, Pipe & Extrusion, Automotive, Electronics, Chemical Industry, Seeds & Agriculture, Building Materials.",
+                materials: "Plastic (PET, HDPE, LDPE, PP, PVC), Glass, Metal, Paper, Cardboard, Flexible films, Laminated pouches, Foil, Rubber, Wood, Cables/Pipes.",
+                printContent: "MFG/EXP Dates, Batch/Lot No, Serial No, Shift Code, Time & Date, Logos, Barcodes, QR/Data Matrix Codes, Variable Data, Alphanumeric Text.",
                 page: "pages/technology/Leibinger.html",
                 pdf: "brochures/JET3_ECO_Flyer_.pdf"
             },
@@ -308,6 +338,8 @@
         if (p.models) msg += `📋 **Models:** ${p.models}\n\n`;
         if (p.features) msg += `⚙️ **Features:** ${p.features}\n\n`;
         if (p.applications) msg += `🎯 **Applications:** ${p.applications}\n\n`;
+        if (p.materials) msg += `🧱 **Printable Materials:** ${p.materials}\n\n`;
+        if (p.printContent) msg += `🖋️ **Print Content:** ${p.printContent}\n\n`;
         if (p.page) msg += `[Learn more →](${basePath}${p.page})`;
         return msg;
     }
