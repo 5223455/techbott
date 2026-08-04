@@ -418,7 +418,7 @@
                 { text: "Medium (up to 50 m/min)", icon: "🚶" },
                 { text: "High (50–150 m/min)", icon: "🏃" },
                 { text: "Very High (150–240+ m/min)", icon: "🚀" },
-                { text: "Not Sure", icon: "🤷" }
+                { text: "Other", icon: "📝", isOther: true }
             ]
         },
         {
@@ -430,7 +430,7 @@
                 { text: "Medium (12.7–25.4mm)", icon: "📐" },
                 { text: "Large (25.4–50mm)", icon: "📏" },
                 { text: "Extra Large (50mm+)", icon: "🖼️" },
-                { text: "Not Sure", icon: "🤷" }
+                { text: "Other", icon: "📝", isOther: true }
             ]
         }
     ];
