@@ -535,13 +535,11 @@
             if (opt.isOther) {
                 optsHtml += `
                     <button class="mavya-overlay-option" data-other="true">
-                        <div class="mavya-overlay-option-icon">${opt.icon}</div>
                         <div class="mavya-overlay-option-text">${opt.text} (Type your answer)</div>
                     </button>`;
             } else {
                 optsHtml += `
                     <button class="mavya-overlay-option" data-answer="${opt.text}">
-                        <div class="mavya-overlay-option-icon">${opt.icon}</div>
                         <div class="mavya-overlay-option-text">${opt.text}</div>
                     </button>`;
             }
