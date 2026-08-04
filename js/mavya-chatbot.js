@@ -360,10 +360,11 @@
         const q = userMsg.toLowerCase().trim();
         if (!q) return "Please type a question.";
 
-        // If someone types "recommend" in the chat, open the overlay instead
-        if (q === "product recommendation assistant" || q === "product recommendations" || q === "product recommendation" || q === "recommend me a printer" || q === "recommend" || q === "ai product recommendation" || q === "✨ ai product recommendation") {
+        // If someone asks for a recommendation, suggestion, or "which printer", open the overlay
+        const recRegex = /recommend|suggest|which printer|best printer|what printer|which application|which machine|printer for my product/i;
+        if (q === "✨ ai product recommendation" || recRegex.test(q)) {
             setTimeout(() => openOverlay(), 100);
-            return "Opening the **AI Product Recommendation Assistant** for you! 🤖";
+            return "I'd be happy to help you find the right solution! Opening the **AI Product Recommendation Assistant**... 🤖";
         }
 
         for (const intent of productIntents) {
