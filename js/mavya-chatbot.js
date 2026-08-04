@@ -1084,11 +1084,10 @@
             }
         });
 
-        // Auto-open Chatbot widget on Home Page after 1.5 seconds (only once per session)
+        // Auto-open Chatbot widget on Home Page after 1.5 seconds (every time)
         setTimeout(() => {
             const isHome = window.location.pathname === '/' || window.location.pathname.toLowerCase().endsWith('index.html') || window.location.pathname.endsWith('/');
-            if (isHome && !sessionStorage.getItem('mavya_chat_auto_opened')) {
-                sessionStorage.setItem('mavya_chat_auto_opened', 'true');
+            if (isHome) {
                 if (!isOpen) toggleChat();
             }
         }, 1500);
