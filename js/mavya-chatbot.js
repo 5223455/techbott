@@ -148,10 +148,10 @@
                 page: "pages/technology/Leibinger.html",
                 pdf: "brochures/JET2-NEO_Flyer_.pdf"
             },
-            "leibinger jet3up": {
-                name: "Leibinger JET3up",
+            "jet 3 eco": {
+                name: "Jet 3 Eco",
                 brand: "Leibinger",
-                models: "JET3up",
+                models: "JET3eco",
                 features: "Over 800 software functions, prints up to 5 lines. Print speeds up to 10 m/s. IP54/IP65 ratings, Sealtronic technology, multi-language UI.",
                 applications: "Carton, Plastics, Metal, Glass, Cables, Electronics.",
                 page: "pages/technology/Leibinger.html",
@@ -705,7 +705,7 @@
             addScore('jet 3 eco', 3);
         } else if (spd.includes('high') || spd.includes('50')) {
             addScore('cij printers', 2);
-            addScore('jet 2 neo', 2);
+            addScore('leibinger jet2neo', 2);
             addScore('tij printers', 2);
         } else if (spd.includes('medium')) {
             addScore('tij printers', 2);
@@ -756,7 +756,7 @@
         if (ind.includes('food') || ind.includes('beverage')) {
             addScore('cij printers', 2);
             addScore('tto printers', 2);
-            addScore('jet 2 neo', 1);
+            addScore('leibinger jet2neo', 1);
         }
         if (ind.includes('cosmetic') || ind.includes('personal')) {
             addScore('tij printers', 2);
