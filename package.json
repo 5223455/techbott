@@ -1,0 +1,11 @@
+{
+  "name": "techbott-india",
+  "version": "1.0.0",
+  "description": "TechBott India Website",
+  "scripts": {
+    "start": "node"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}

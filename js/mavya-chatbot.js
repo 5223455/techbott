@@ -877,9 +877,9 @@
                         <a href="${quotationLink}" class="mavya-next-step-btn" style="flex: 1; padding: 8px; font-size: 13px;">
                             <span class="mavya-next-step-icon">📝</span> Quote
                         </a>
-                        <button onclick="window.mavyaDownloadBrochure('${p.name.replace(/'/g, "\\'")}', '${p.pdf}')" class="mavya-next-step-btn" style="flex: 1; padding: 8px; font-size: 13px; border: 1px solid var(--mavya-border); background: #f8fafc; cursor: pointer;">
+                        ${p.pdf ? `<button onclick="window.mavyaDownloadBrochure('${p.name.replace(/'/g, "\\'")}', '${p.pdf}')" class="mavya-next-step-btn" style="flex: 1; padding: 8px; font-size: 13px; border: 1px solid var(--mavya-border); background: #f8fafc; cursor: pointer;">
                             <span class="mavya-next-step-icon">📄</span> Brochure
-                        </button>
+                        </button>` : ''}
                         ${p.page ? `<a href="${basePath}${p.page}" class="mavya-next-step-btn" style="flex: 1; padding: 8px; font-size: 13px;">
                             <span class="mavya-next-step-icon">🔍</span> Specs/Videos
                         </a>` : ''}
