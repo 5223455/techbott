@@ -1084,13 +1084,14 @@
             }
         });
 
-        // Auto-open AI recommendation overlay after 2 seconds (only once per session)
+        // Auto-open Chatbot widget on Home Page after 1.5 seconds (only once per session)
         setTimeout(() => {
-            if (!sessionStorage.getItem('mavya_ai_opened')) {
-                sessionStorage.setItem('mavya_ai_opened', 'true');
-                openOverlay();
+            const isHome = window.location.pathname === '/' || window.location.pathname.toLowerCase().endsWith('index.html') || window.location.pathname.endsWith('/');
+            if (isHome && !sessionStorage.getItem('mavya_chat_auto_opened')) {
+                sessionStorage.setItem('mavya_chat_auto_opened', 'true');
+                if (!isOpen) toggleChat();
             }
-        }, 2000);
+        }, 1500);
     }
 
     if (document.readyState === 'loading') {
