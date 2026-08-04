@@ -307,7 +307,7 @@
     const generalIntents = [
         {
             keywords: ["contact", "contact information", "contact us", "reach out", "phone number", "email address"],
-            handler: () => `**Contact TechBott India**\n\nWe'd love to hear from you!\n\n📍 **Address:** Plot No - 19/B, Phase 1, IDA Jeedimetla, Hyderabad, Telangana 500055\n📱 **Phone:** ${KB.contact.phone.join(" | ")}\n📱 **WhatsApp:** ${KB.contact.whatsapp}\n📧 **Email:** ${KB.contact.email.general}\n\n[Visit our Contact Page →](${basePath}pages/general/contact.html)`
+            handler: () => `**Contact TechBott India**\n\nWe'd love to hear from you!\n\n📍 **Address:** 07-004/A/85/P, JK Nagar, Jeedimetla, Hyderabad, Telangana - 500 055\n📱 **Phone:** ${KB.contact.phone.join(" | ")}\n📱 **WhatsApp:** ${KB.contact.whatsapp}\n📧 **Email:** ${KB.contact.email.general}\n\n[Visit our Contact Page →](${basePath}pages/general/contact.html)`
         },
         {
             keywords: ["products", "all products", "what do you sell", "machines", "equipment"],
