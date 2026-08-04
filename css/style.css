@@ -4862,3 +4862,10 @@ table.spec-table > tbody > tr:not(.category-row):nth-child(even) > td {
 table.spec-table > tbody > tr:not(.category-row):nth-child(even) > td:first-child {
     background-color: #f4f4f4 !important;
 }
+
+/* Dropdown Item Hover - Orange */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+    background-color: var(--secondary) !important;
+    color: #ffffff !important;
+}
