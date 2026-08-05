@@ -418,7 +418,8 @@
         let html = text
             .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
             .replace(/\*(.*?)\*/g, '<em>$1</em>')
-            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="mavya-link">$1</a>')
+            // Match links, allowing for one level of nested parentheses in the URL
+            .replace(/\[([^\]]+)\]\(((?:[^)]+|\([^)]*\))*)\)/g, '<a href="$2" class="mavya-link">$1</a>')
             .replace(/^• (.+)$/gm, '<li>$1</li>')
             .replace(/^✅ (.+)$/gm, '<li class="mavya-check">$1</li>')
             .replace(/\n\n/g, '<br><br>')
