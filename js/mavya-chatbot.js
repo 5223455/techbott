@@ -372,10 +372,24 @@
             return "Opening the **AI Product Recommendation Assistant** for you! 🤖";
         }
         if (recRegex.test(q)) {
+            if (typeof extractPreferences === 'function') {
+                const extractedPrefs = extractPreferences(q);
+                if (extractedPrefs) {
+                    const matchedProducts = calculateRecommendations(extractedPrefs);
+                    if (matchedProducts.length > 0) {
+                        let p = matchedProducts[0];
+                        let recMsg = `🎉 **I have the perfect recommendation for you!**\n\n`;
+                        recMsg += `Based on your query, the best solution is the **${p.name}**.\n\n`;
+                        recMsg += `⚙️ **Key Features:** ${p.features}\n\n`;
+                        if (p.page) recMsg += `[View Details & Specs →](${basePath}${p.page})`;
+                        return recMsg;
+                    }
+                }
+            }
             chatWizardActive = true;
             chatWizardStep = 0;
             chatWizardAnswers = {};
-            setTimeout(() => processChatWizardStep(), 800);
+            setTimeout(() => { if (typeof processChatWizardStep === 'function') processChatWizardStep(); }, 800);
             return "I'd be happy to help you find the right solution! Let me ask you a few quick questions.";
         }
 
@@ -682,8 +696,7 @@
     }
 
     // ─── Enhanced Recommendation Engine ───
-    function generateOverlayRecommendation() {
-        const prefs = overlayAnswers;
+    function calculateRecommendations(prefs) {
         let matchedProducts = [];
         let scores = {};
 
@@ -825,6 +838,16 @@
             addScore('fiber lasers', 2);
         }
 
+        for (const key in scores) {
+            matchedProducts.push({ key: key, score: scores[key], product: KB.products[key] });
+        }
+        matchedProducts.sort((a, b) => b.score - a.score);
+        return matchedProducts.map(m => m.product);
+    }
+
+    function generateOverlayRecommendation() {
+        let matchedProducts = calculateRecommendations(overlayAnswers);
+        
         // Fallback if nothing matched (e.g. user skipped everything)
         if (matchedProducts.length === 0) {
             // Recommend all products, TechBott first
@@ -839,10 +862,24 @@
                 if (a.brand !== 'TechBott' && b.brand === 'TechBott') return 1;
                 return 0;
             });
-            return matchedProducts;
         }
-
         return matchedProducts;
+    }
+
+    function extractPreferences(msg) {
+        let prefs = {};
+        const q = msg.toLowerCase();
+        if (q.match(/glass|ceramic/)) prefs.material = 'glass';
+        if (q.match(/metal|aluminum|steel|iron/)) prefs.material = 'metal';
+        if (q.match(/plastic|pet|hdpe|pvc/)) prefs.material = 'plastic';
+        if (q.match(/carton|paper|box|corrugated/)) prefs.material = 'carton';
+        if (q.match(/film|foil|flexible|pouch|packet/)) prefs.material = 'film';
+        if (q.match(/wood|timber/)) prefs.material = 'wood';
+        if (q.match(/cable|wire|pipe|tube|tyre|tire|rubber/)) prefs.material = 'cable';
+        if (q.match(/pharma|medicine|medical/)) prefs.industry = 'pharmaceutical';
+        if (q.match(/food|beverage|drink|snack/)) prefs.industry = 'food';
+        if (q.match(/cosmetic|makeup|beauty/)) prefs.industry = 'cosmetic';
+        return Object.keys(prefs).length > 0 ? prefs : null;
     }
 
     function renderOverlayResults(body) {
@@ -1085,7 +1122,7 @@
             }
 
             let bestMatch = matchedProducts[0];
-            let p = KB.products[bestMatch.key];
+            let p = bestMatch;
             
             let recMsg = `🎉 **I have a recommendation for you!**\n\n`;
             recMsg += `Based on your needs, the best solution is the **${p.name}**.\n\n`;
