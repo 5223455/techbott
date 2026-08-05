@@ -10,6 +10,8 @@
     let chatWizardActive = false;
     let chatWizardStep = 0;
     let chatWizardAnswers = {};
+    let processChatWizardStep;
+    let finishChatWizard;
     const scripts = document.getElementsByTagName('script');
     for (let i = 0; i < scripts.length; i++) {
         const src = scripts[i].getAttribute('src');
@@ -1048,7 +1050,7 @@
         toggle.addEventListener('click', toggleChat);
         closeBtn.addEventListener('click', toggleChat);
 
-        function processChatWizardStep() {
+        processChatWizardStep = function() {
             if (chatWizardStep >= REC_QUESTIONS.length) {
                 finishChatWizard();
                 return;
@@ -1073,7 +1075,7 @@
             addMessage(msg, 'bot');
         }
 
-        function finishChatWizard() {
+        finishChatWizard = function() {
             chatWizardActive = false;
             const matchedProducts = calculateRecommendations(chatWizardAnswers);
             
